@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Sweet-Bananza/static/css/main.4866cff2.css",
+    "main.js": "/Sweet-Bananza/static/js/main.8fb2e46b.js",
+    "static/media/logo.png": "/Sweet-Bananza/static/media/logo.8395ab1a960a2a7b3b41.png",
+    "static/media/background.webp": "/Sweet-Bananza/static/media/background.7de1b96f5e673c04ba06.webp",
+    "static/media/watermelon.png": "/Sweet-Bananza/static/media/watermelon.73a133cd04f4c22933c2.png",
+    "static/media/pineapple.png": "/Sweet-Bananza/static/media/pineapple.c6bdde82129ecbae264c.png",
+    "static/media/grape.png": "/Sweet-Bananza/static/media/grape.bdf97b4cbe51b913a146.png",
+    "static/media/lemon.png": "/Sweet-Bananza/static/media/lemon.aa9e372afe902a39ecd6.png",
+    "static/media/peach.png": "/Sweet-Bananza/static/media/peach.9317c2fdb1a612f03c05.png",
+    "static/media/cherry.png": "/Sweet-Bananza/static/media/cherry.13d19415d1f0ce924df5.png",
+    "static/media/strawberry.png": "/Sweet-Bananza/static/media/strawberry.97154e4061d2dce43c52.png",
+    "static/media/apple.png": "/Sweet-Bananza/static/media/apple.b780bde2e5db32cbe8e7.png",
+    "index.html": "/Sweet-Bananza/index.html",
+    "main.4866cff2.css.map": "/Sweet-Bananza/static/css/main.4866cff2.css.map",
+    "main.8fb2e46b.js.map": "/Sweet-Bananza/static/js/main.8fb2e46b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4866cff2.css",
+    "static/js/main.8fb2e46b.js"
+  ]
+}
