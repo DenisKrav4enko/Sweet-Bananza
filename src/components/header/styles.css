@@ -1,0 +1,22 @@
+.logo {
+    margin-top: 25px;
+    max-width: 300px;
+}
+
+.title {
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+    color: #9edb0d;
+    margin: 0;
+    padding: 0;
+}
+
+.title_web {
+    font-size: 40px;
+}
+
+.title_mob {
+    font-size: 25px;
+    padding: 10px 0;
+}

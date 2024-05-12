@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from 'react'
+import { Board, Controls, Modal, Footer, Header } from './components/index'
+import './App.css'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [animate, setAnimate] = useState(false);
+    const [isWin, setIsWin] = useState(false);
+    const [isOpenModal, setIsOpenModal] = useState(false);
+
+    useEffect(() => {
+        if (animate) {
+            const timer = setTimeout(() => {
+                setIsWin(true);
+            }, 2000);
+
+            return () => clearTimeout(timer);
+        }
+    }, [animate]);
+
+    useEffect(() => {
+        if (isWin) {
+            const timer = setTimeout(() => {
+                setIsOpenModal(true)
+            }, 700)
+
+            return () => clearTimeout(timer);
+        }
+    }, [isWin]);
+
+    return (
+        <div className="App">
+            <Header />
+            <Board isWin={isWin} animate={animate} />
+            <Controls setAnimate={setAnimate} />
+            <Footer />
+            {isOpenModal && <Modal />}
+        </div>
+    );
 }
 
 export default App;

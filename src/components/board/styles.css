@@ -1,0 +1,44 @@
+.board-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.board {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 5px solid #9edb0d;
+    border-radius: 15px;
+}
+
+.winner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 0;
+    border-radius: 8px;
+    background-color: #9edb0d;
+    box-shadow: 0 0 10px #9edb0d;
+    animation: appear 0.5s forwards, glow 1s infinite alternate;
+}
+
+@keyframes appear {
+    to {
+        width: 98%;
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px 4px #9edb0d;
+    }
+    to {
+        box-shadow: 0 0 20px 10px #9edb0d;
+    }
+}

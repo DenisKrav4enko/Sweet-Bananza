@@ -1,0 +1,23 @@
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 32px;
+    font-weight: 700;
+    background-color: #9edb0d;
+    border: 5px solid #ff6363;
+    color: red;
+    border-radius: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover {
+    transition: 0.2s;
+    background-color: red;
+    border: 5px solid #9edb0d;
+    color: #9edb0d;
+}
